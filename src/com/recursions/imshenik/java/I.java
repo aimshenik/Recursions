@@ -1,12 +1,16 @@
 package com.recursions.imshenik.java;
 
+/*I: Разложение на множители
+Дано натуральное число n>1. 
+Выведите все простые множители этого числа в порядке неубывания с учетом кратности. Алгоритм должен иметь сложность O(logn).*/
+
 public class I {
 
 	public static void main(String[] args) {
 
-		int n = 33;
+		int n = 333;
 		//System.out.println(recursion(n, 2));
-		recursion2(n, 2);
+		System.out.println(recursion(n, 2));
 
 	}
 
@@ -22,7 +26,7 @@ public class I {
 		}
 	}
 
-	
+	//это решение от автора статьи. Говно какое-то.
 	public static void recursion2(int n, int k) {
         // k- дополнительный параметр. При вызове должен быть равен 2
         // Базовый случай
